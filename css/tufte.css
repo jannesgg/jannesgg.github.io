@@ -239,6 +239,9 @@ p > cite.epigraph {
   font-style: normal;
   margin-top: .8rem; }
 
+header {
+  text-align: center; }
+
 body {
   width: 87.5%;
   margin-left: auto;
@@ -604,7 +607,10 @@ label.margin-toggle:not(.sidenote-number) {
 
 header > nav.group, body footer {
   width: 95%;
-  padding-top: 0rem; }
+  padding-top: 0rem;
+  align-items: center;
+  display: flex;
+  justify-content: center; }
 
 nav.group a.active {
   font-weight: bold; }
