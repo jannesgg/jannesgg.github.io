@@ -16,8 +16,18 @@
     <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
+
   <link rel="stylesheet" type="text/css" href="/css/tufte.css">
   <link rel="stylesheet" type="text/css" href="/css/latex.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
   <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
 
   <link rel="canonical" href="http://localhost:4000/page/">
@@ -25,19 +35,21 @@
   <link rel="alternate" type="application/rss+xml" title="jannes-germishuys" href="http://localhost:4000/feed.xml" />
 </head>
 
-  <body>
+  <body class="full-width">
     <!--- Header and nav template site-wide -->
 <header>
 	
 		<h1 class="header-title"><a href="/">jannes-germishuys</a></h1>
-		
+		<!---
 			<h2 class="header-subtitle">404 not found.</h2>
-		
+		 -->
 	
 
     <nav class="group">
 	
 	
+		
+  	
 		
   	
 		
@@ -65,63 +77,116 @@
 	</nav>
 </header>
 
-    <article class="group">
+    <article>
       <h1>Projects</h1>
 <p class="subtitle">Portfolio of personal projects</p>
 <p class="margin-maker"/>
 
-<div class="post-separator">
-  <span>Active Projects</span>
+<!-- Remote Projects JS -->
+<script src="/assets/js/remote-projects.js"></script>
+
+<div class="card-columns m-3 mt-5">
+  <!-- Remote Projects -->
+  <div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="https://github.com/jannesgg/swe-covid-19" class="project card text-dark"><div class="card-body">
+      <h5 id="swe-covid-19-name" class="card-title"><i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |&nbsp;Swe Covid 19
+      </h5>
+      <p id="swe-covid-19-desc" class="card-text">Tracking COVID-19 in Sweden</p>
+      <p id="swe-covid-19-tools" class="card-text"></p>
+    </div>
+  </a>
 </div>
-<div class="projects">
-  
-  
-    <div class="project">
+
+
+<!-- <div class="project">
   <div class="project-content">
     <span>
-      <a href="https://github.com/">Project1</a>
+      <a href=""></a>
     </span>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius turpis nec lorem pretium porta. Integer laoreet dolor quis sapien mattis porttitor. Suspendisse ac lacus</p>
-
-  </div>
-  
-  <div class="project-info">
-    <p>
-      <strong># </strong>
-      
-        <a href="https://nodejs.org/">node.js</a>, 
-      
-        <a href="http://getbootstrap.com/">Bootstrap</a>, 
-      
-        <a href="https://jquery.com/">jQuery</a>, 
-      
-        PHP, 
-      
-        HTML, 
-      
-        JavaScript, 
-      
-        CSS
-      
-    </p>
+    
   </div>
   
 </div>
+ -->
 
-  
-  
+    <script>get_tools("jannesgg/swe-covid-19")</script>
+
+  <div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="https://github.com/jannesgg/swe-covid-19-assistant" class="project card text-dark"><div class="card-body">
+      <h5 id="swe-covid-19-assistant-name" class="card-title"><i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |&nbsp;Swe Covid 19 Assistant
+      </h5>
+      <p id="swe-covid-19-assistant-desc" class="card-text">Multilingual assistant for official information from Swedish Public Health Agency</p>
+      <p id="swe-covid-19-assistant-tools" class="card-text"></p>
+    </div>
+  </a>
 </div>
 
-<div class="post-separator">
-  <span>Previous Projects</span>
+
+<!-- <div class="project">
+  <div class="project-content">
+    <span>
+      <a href=""></a>
+    </span>
+    
+  </div>
+  
 </div>
-<div class="projects">
-  
-  
-  
+ -->
+
+    <script>get_tools("jannesgg/swe-covid-19-assistant")</script>
+
+  <div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="https://github.com/jannesgg/fake-news-detection" class="project card text-dark"><div class="card-body">
+      <h5 id="fake-news-detection-name" class="card-title"><i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |&nbsp;Fake News Detection
+      </h5>
+      <p id="fake-news-detection-desc" class="card-text">Fake news detection in English and Swedish using Deep Knowledge Embeddings. </p>
+      <p id="fake-news-detection-tools" class="card-text"></p>
+    </div>
+  </a>
 </div>
 
 
+<!-- <div class="project">
+  <div class="project-content">
+    <span>
+      <a href=""></a>
+    </span>
+    
+  </div>
+  
+</div>
+ -->
+
+    <script>get_tools("jannesgg/fake-news-detection")</script>
+
+  
+
+  <!-- Local Projects -->
+  <div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/projects/project01" class="project card text-dark"><img id="takalane-sesame-img" class="card-img-top" src="https://www.sketchappsources.com/resources/source-image/project-neon-groove-music-ui.png" alt="Takalane Sesame" /><div class="card-body">
+      <h5 id="takalane-sesame-name" class="card-title">Takalane Sesame
+      </h5>
+      <p id="takalane-sesame-desc" class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p id="takalane-sesame-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">nothing</span><span class="badge badge-pill text-primary border border-primary ml-1">important</span></p>
+    </div>
+  </a>
+</div>
+
+
+<!-- <div class="project">
+  <div class="project-content">
+    <span>
+      <a href=""></a>
+    </span>
+    
+  </div>
+  
+</div>
+ -->
+
+  
+
+</div>
 
 
     </article>
