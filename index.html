@@ -1,106 +1,26 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Data scientist and researcher specializing in NLP and AI"><meta name="author" content="Jannes Germishuys"><meta name="theme-color" content="#fffff8"><!-- Open Graph --><meta property="og:title" content="About - Jannes Germishuys"><meta property="og:description" content="Data scientist and researcher specializing in NLP and AI"><meta property="og:type" content="website"><meta property="og:url" content="https://jannesgg.github.io/"><meta property="og:locale" content="en_US"><!-- Twitter Card --><meta name="twitter:card" content="summary"><meta name="twitter:title" content="About - Jannes Germishuys"><meta name="twitter:description" content="Data scientist and researcher specializing in NLP and AI"><title>About - Jannes Germishuys</title><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="canonical" href="https://jannesgg.github.io/"><link rel="alternate" type="application/rss+xml" title="jannes-germishuys" href="/feed.xml"><link rel="stylesheet" href="/styles/tufte.css"></head> <body class="full-width">  <header class="site-header"> <h1 class="header-title"><a href="/">jannes-germishuys</a></h1>  <nav class="site-nav" aria-label="Main navigation"> <a href="/" class="active">About</a> <a href="/blog/">The Lost Breath</a> <a href="/projects/">Projects</a> </nav> </header> <article class="full-width"> <div style="max-width: 720px; margin: 0 auto;"> <p style="font-style: italic;">(actuarial + data) / scientist</p> <p>Welcome to the home of my personal projects and my blog "The Lost Breath".</p> <p>I'm currently a Research-oriented Data Scientist working in <img src="https://icons.iconarchive.com/icons/wikipedia/flags/512/SE-Sweden-Flag-icon.png" alt="Sweden" width="40" height="40"></p> <p>My background is in actuarial science, but I also have extensive experience across insurance, pharmaceutical, telecommunications and financial industries in a wide range of applications including deep learning analytics (e.g. computer vision, NLP) and AI product development.</p> <p>My main interest area is natural language processing. I am particularly excited about working on data problems that have the potential to enhance the quality of our lives and to expedite new frontiers in the human story.</p> <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; margin-top: 2rem;"> <a href="/blog/" style="padding: 0.75rem 2rem; border: 1px solid var(--color-border); border-radius: 4px; color: var(--color-text-muted); font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--color-accent)';this.style.color='var(--color-accent)'" onmouseout="this.style.borderColor='var(--color-border)';this.style.color='var(--color-text-muted)'">Read the Blog</a> <a href="/projects/" style="padding: 0.75rem 2rem; background: var(--color-accent); border: 1px solid var(--color-accent); border-radius: 4px; color: white; font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; transition: all 0.3s ease;" onmouseover="this.style.background='var(--color-accent-dark)'" onmouseout="this.style.background='var(--color-accent)'">View Projects</a> </div> </div> </article> <footer class="site-footer"> <hr> <div class="credits"> <span>&copy; 2026 <a href="mailto:jannesg@zoho.com">Jannes Germishuys</a></span> </div> </footer>  <button class="theme-toggle" aria-label="Toggle dark mode" id="theme-toggle" style="background: var(--color-bg); opacity: 1; visibility: visible; pointer-events: auto; z-index: 9999;"> <span class="theme-icon">◐</span> </button> <script>
+      console.log('Theme script loaded');
+      const toggle = document.getElementById('theme-toggle');
+      console.log('Toggle button:', toggle);
+      
+      function setTheme(theme) {
+        console.log('Setting theme:', theme);
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        var icon = document.querySelector('.theme-icon');
+        if (icon) icon.textContent = theme === 'dark' ? '◑' : '◐';
+      }
 
-  <title>About</title>
-  <meta name="description" content="404 not found">
+      var saved = localStorage.getItem('theme');
+      if (saved) {
+        setTheme(saved);
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark');
+      }
 
-  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
-  
-  
-  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
-  
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
-
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
-
-  <!-- Bootstrap CSS CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-  <!-- Animate CSS CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
-
-  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
-  <link rel="stylesheet" type="text/css" href="/css/latex.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
-
-  <link rel="canonical" href="/">
-
-  <link rel="alternate" type="application/rss+xml" title="jannes-germishuys" href="/feed.xml" />
-</head>
-
-  <body class="full-width">
-    <!--- Header and nav template site-wide -->
-<header>
-	
-		<h1 class="header-title"><a href="/">jannes-germishuys</a></h1>
-		<!---
-			<h2 class="header-subtitle">404 not found.</h2>
-		 -->
-	
-
-    <nav class="group">
-	
-	
-		
-  	
-		
-  	
-		
-  	
-		
-  	
-		
-		    
-		      <a class="active" href="/" class="active">About</a>
-		    
-	    
-  	
-		
-		    
-		      <a href="/blog/">The Lost Breath</a>
-		    
-	    
-  	
-		
-		    
-		      <a href="/page/">Projects</a>
-		    
-	    
-  	
-	</nav>
-</header>
-
-    <article>
-      <p>(actuarial + data) / scientist</p>
-
-<p>Welcome to the home of my personal projects and my blog “The Lost Breath”.</p>
-
-<p>I’m currently a Research-oriented Data Scientist working in <img src="https://icons.iconarchive.com/icons/wikipedia/flags/512/SE-Sweden-Flag-icon.png" alt="Sweden" width="40" height="40" /></p>
-
-<p>My background is in actuarial science, but I also have extensive experience across insurance, telecommunications and financial industries in a wide range of applications including deep learning analytics (e.g. computer vision, NLP) and AI product development.</p>
-
-<p>My main interest area is natural language processing. I am particularly excited about working on data problems that have the potential to enhance the quality of our lives and to expedite new frontiers in the human story.</p>
-
-    </article>
-    <span class="print-footer">About - Jannes Germishuys</span>
-    <footer>
-  <hr class="slender">
-<div class="credits">
-<span>&copy; 2023 
-  
-		<a href="mailto:jannesg [at] zoho [dot] com">Jannes Germishuys</a></span></br> <br>    
-    
-
- 
-</div>  
-</footer>
-
-  </body>
-</html>
+      toggle.addEventListener('click', function() {
+        console.log('Theme button clicked');
+        var current = document.documentElement.getAttribute('data-theme');
+        setTheme(current === 'dark' ? 'light' : 'dark');
+      });
+    </script> </body> </html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Data scientist and researcher specializing in NLP and AI"><meta name="author" content="Jannes Germishuys"><meta name="theme-color" content="#fffff8"><!-- Open Graph --><meta property="og:title" content="Low-resource Languages | Projects - Jannes Germishuys"><meta property="og:description" content="Data scientist and researcher specializing in NLP and AI"><meta property="og:type" content="website"><meta property="og:url" content="https://jannesgg.github.io/projects/tag/low-resource-languages/"><meta property="og:locale" content="en_US"><!-- Twitter Card --><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Low-resource Languages | Projects - Jannes Germishuys"><meta name="twitter:description" content="Data scientist and researcher specializing in NLP and AI"><title>Low-resource Languages | Projects - Jannes Germishuys</title><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="canonical" href="https://jannesgg.github.io/projects/tag/low-resource-languages/"><link rel="alternate" type="application/rss+xml" title="jannes-germishuys" href="/feed.xml"><link rel="stylesheet" href="/styles/tufte.css"></head> <body class="full-width">  <header class="site-header"> <h1 class="header-title"><a href="/">jannes-germishuys</a></h1>  <nav class="site-nav" aria-label="Main navigation"> <a href="/">About</a> <a href="/blog/">The Lost Breath</a> <a href="/projects/" class="active">Projects</a> </nav> </header> <article> <div style="margin-bottom: 2rem;"> <a href="/projects/" style="font-size: 0.85rem; color: var(--color-text-muted);">← All Projects</a> <h1 style="margin-top: 0.5rem; font-size: 2rem;">Low-resource Languages</h1> <p style="color: var(--color-text-muted);">1 project</p> </div> <div class="card-group"> <div class="fade-in fade-in-delay-1"> <a href="/projects/project01" class="card"> <div class="card-body"> <h3 class="card-title">Takalane Sesame - A South African NLP experiment</h3> <p> <span class="badge badge-light ">NLP</span><span class="badge badge-light active">Low-resource Languages</span><span class="badge badge-light ">Machine Learning</span> </p> <p class="card-text">Takalane Sesame is a project that aims to promote the use of African languages in NLP, and in particular look at techniques for low-resource languages to equalise performance with larger languages around the world.</p> </div> <div class="card-footer"> 1 January 2021 </div> </a> </div> </div> </article> <footer class="site-footer"> <hr> <div class="credits"> <span>&copy; 2026 <a href="mailto:jannesg@zoho.com">Jannes Germishuys</a></span> </div> </footer>  <button class="theme-toggle" aria-label="Toggle dark mode" id="theme-toggle" style="background: var(--color-bg); opacity: 1; visibility: visible; pointer-events: auto; z-index: 9999;"> <span class="theme-icon">◐</span> </button> <script>
+      console.log('Theme script loaded');
+      const toggle = document.getElementById('theme-toggle');
+      console.log('Toggle button:', toggle);
+      
+      function setTheme(theme) {
+        console.log('Setting theme:', theme);
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        var icon = document.querySelector('.theme-icon');
+        if (icon) icon.textContent = theme === 'dark' ? '◑' : '◐';
+      }
+
+      var saved = localStorage.getItem('theme');
+      if (saved) {
+        setTheme(saved);
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark');
+      }
+
+      toggle.addEventListener('click', function() {
+        console.log('Theme button clicked');
+        var current = document.documentElement.getAttribute('data-theme');
+        setTheme(current === 'dark' ? 'light' : 'dark');
+      });
+    </script> </body> </html>
