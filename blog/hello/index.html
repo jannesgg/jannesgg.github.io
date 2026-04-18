@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Data scientist and researcher specializing in NLP and AI"><meta name="author" content="Jannes Germishuys"><meta name="theme-color" content="#fffff8"><!-- Open Graph --><meta property="og:title" content="Where's WALDO - Jannes Germishuys"><meta property="og:description" content="Data scientist and researcher specializing in NLP and AI"><meta property="og:type" content="website"><meta property="og:url" content="https://jannesgg.github.io/blog/hello/"><meta property="og:locale" content="en_US"><!-- Twitter Card --><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Where's WALDO - Jannes Germishuys"><meta name="twitter:description" content="Data scientist and researcher specializing in NLP and AI"><title>Where&#39;s WALDO - Jannes Germishuys</title><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="canonical" href="https://jannesgg.github.io/blog/hello/"><link rel="alternate" type="application/rss+xml" title="jannes-germishuys" href="/feed.xml"><link rel="stylesheet" href="/styles/tufte.css"></head> <body>  <header class="site-header"> <h1 class="header-title"><a href="/">jannes-germishuys</a></h1>  <nav class="site-nav" aria-label="Main navigation"> <a href="/">About</a> <a href="/blog/" class="active">The Lost Breath</a> <a href="/projects/">Projects</a> </nav> </header> <article class="narrow"> <h1>Where&#39;s WALDO</h1> <p class="subtitle" style="color: var(--color-text-muted); font-style: italic;"> 30 March 2020 </p> <p>W-A-L-D-O: A mono-syllabic, five letter word that stirs us in a way ‘The Notebook’ never could. But for years the question “Where’s Waldo” has been the headline, the focal point, the pivotal conundrum. Why has nobody ever stopped to ask “Why Waldo” or “Who’s Waldo, really”; questions I would surely have posed before engaging in what was to become the longest and largest man-hunt of all time. Waldo’s appeal and hidden meaning in our lives stretches much further than simply scouting him out in a crowd or pointing him out on a world map. Waldo could be under the table right now, eating bean-dip from my socks. He could be in the south of France, sipping a margarita by the pool. He could even be right here, sitting next to me making silly faces. But there is one reason I can candidly say that he isn’t doing any one of those things: I don’t want him to. I’ve never read the books of Waldo, but then this isn’t really about Waldo at all, is it. Waldo is simply a name given to any manifestation of our collective psychosis, embodying dreams, emotions, ideas, and everything that is right with the world. Waldo is a mirage of all that can be or should be but never is. Representing the symbolic perfection and imperfection of the world harmonized into one figure, one person, one unwavering sense of compassion; a true understanding. Waldo is both infinity and zero, at the blissful intersection where the possible and the impossible collide. But Waldo is no closer to flawlessness than you and I. He is a mere mortal, someone who makes mistakes, someone who has but two legs and one pair of eyes, and yet somehow someone we cannot live without. At a sub-conscious level, we don’t look to Superman or Bruce Banner to envision our perfect selves (most of us, anyway). We need to be able to relate to our former selves in order to collate our current selves with who we wish to become. Hence, Waldo is our glimpse of perfection through an imperfect life, showing us that it is not our mistakes that define us, but rather our inherent need to be good beyond what we can possibly envision for ourselves.</p> </article> <footer class="site-footer"> <hr> <div class="credits"> <span>&copy; 2026 <a href="mailto:jannesg@zoho.com">Jannes Germishuys</a></span> </div> </footer>  <button class="theme-toggle" aria-label="Toggle dark mode" id="theme-toggle" style="background: var(--color-bg); opacity: 1; visibility: visible; pointer-events: auto; z-index: 9999;"> <span class="theme-icon">◐</span> </button> <script>
+      console.log('Theme script loaded');
+      const toggle = document.getElementById('theme-toggle');
+      console.log('Toggle button:', toggle);
+      
+      function setTheme(theme) {
+        console.log('Setting theme:', theme);
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        var icon = document.querySelector('.theme-icon');
+        if (icon) icon.textContent = theme === 'dark' ? '◑' : '◐';
+      }
+
+      var saved = localStorage.getItem('theme');
+      if (saved) {
+        setTheme(saved);
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark');
+      }
+
+      toggle.addEventListener('click', function() {
+        console.log('Theme button clicked');
+        var current = document.documentElement.getAttribute('data-theme');
+        setTheme(current === 'dark' ? 'light' : 'dark');
+      });
+    </script> </body> </html>

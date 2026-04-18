@@ -1,0 +1,7 @@
+# Ignore Astro source folder files
+astro-portfolio/node_modules/
+astro-portfolio/.astro/
+astro-portfolio/dist/
+.DS_Store
+.agents/
+skills-lock.json
